@@ -1,4 +1,4 @@
-int LeftTearX = 165;
+  int LeftTearX = 165;
   int LeftTearY = 280;
   int RightTearX = 595;
   int RightTearY = 280;
