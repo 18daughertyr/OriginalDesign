@@ -7,7 +7,7 @@
   void setup()
 {
   size(750,750);
-  frameRate(1);
+  frameRate(15);
 }
 void draw()
 {
@@ -33,22 +33,20 @@ void draw()
   stroke(0,0,0);
   line(350,475,350,550);
 
- rect(350,300,50,100);
+  rect(350,300,50,100);
  
   fill(155,255,249);
   noStroke();
   ellipse(LeftTearX,LeftTearY,50,70);
   ellipse(RightTearX,RightTearY,50,70);
-   while (X < 100){  
+  
+  
+   fill(155,255,249);
    LeftTearX= LeftTearX - 1;
    LeftTearY= LeftTearY + 1;
    RightTearX = RightTearX + 1;
    RightTearY = RightTearY + 1;
-   X = X + 1;
-   
+   ellipse(LeftTearX,LeftTearY,50,70);
+   ellipse(RightTearX,RightTearY,50,70);
+   redraw();
 }
-}
-
-
-
-
