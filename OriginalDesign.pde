@@ -1,8 +1,7 @@
-  int LeftTearX = 165;
+int LeftTearX = 165;
   int LeftTearY = 280;
   int RightTearX = 595;
   int RightTearY = 280;
-  int X = 0;
 
   void setup()
 {
@@ -40,7 +39,6 @@ void draw()
   ellipse(LeftTearX,LeftTearY,50,70);
   ellipse(RightTearX,RightTearY,50,70);
   
-  
    fill(155,255,249);
    LeftTearX= LeftTearX - 1;
    LeftTearY= LeftTearY + 1;
@@ -48,5 +46,12 @@ void draw()
    RightTearY = RightTearY + 1;
    ellipse(LeftTearX,LeftTearY,50,70);
    ellipse(RightTearX,RightTearY,50,70);
-   //redraw();
+}
+
+    void mouseClicked()
+    {
+    LeftTearX = 165;
+    LeftTearY = 280;
+    RightTearX = 595;
+    RightTearY = 280;
 }
