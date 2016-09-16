@@ -48,5 +48,5 @@ void draw()
    RightTearY = RightTearY + 1;
    ellipse(LeftTearX,LeftTearY,50,70);
    ellipse(RightTearX,RightTearY,50,70);
-   redraw();
+   //redraw();
 }
